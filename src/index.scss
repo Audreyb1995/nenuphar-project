@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: fit-content;
+  box-sizing: border-box;
+
+  @media (min-width: $breakpoint-lg) {
+    overflow-x: hidden;
+}
+
+  @media (max-width: $breakpoint-lg) {
+    overflow-x: hidden;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    overflow-x: hidden;
+  }
+
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #1E1E1E;
+  color: white;
+  font-family: $main-font;
+}
+
+a {
+  font-family: $main-font;
+  color: $brown-color;
+  text-decoration: none;
+}

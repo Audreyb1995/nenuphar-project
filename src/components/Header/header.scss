@@ -1,0 +1,105 @@
+@import '../../variables.scss';
+
+header {
+    > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+
+        @media (max-width: $breakpoint-xs) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+
+            a {
+                cursor: pointer;
+                font-size: 18px;
+
+                @media (min-width: $breakpoint-lg) {
+                    font-size: 34px;
+                }
+
+                @media (max-width: $breakpoint-md) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: $breakpoint-xs) {
+                    font-size: 13px;
+                }
+            }
+
+            a:hover {
+                color: $light-brown;
+            }
+
+            .home {
+                color: white;
+                cursor:default;
+                margin: 0;
+                font-size: 18px;
+
+                @media (min-width: $breakpoint-lg) {
+                    font-size: 34px;
+                }
+
+                @media (max-width: $breakpoint-md) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: $breakpoint-xs) {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .icon-social-header {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            @media (min-width: $breakpoint-lg) {
+                gap: 25px;
+            }
+
+            svg {
+                font-size: 24px;
+                transition: color 0.3s ease;
+
+                @media (min-width: $breakpoint-lg) {
+                    font-size: 36px;
+                    gap: 20px;
+                }
+
+                @media (max-width: $breakpoint-md) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: $breakpoint-xs) {
+                    font-size: 18px;
+                }
+            }
+
+            svg:hover {
+                color: $light-brown;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
